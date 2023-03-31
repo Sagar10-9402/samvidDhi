@@ -9,7 +9,7 @@ Delete a TA record by ID
 
 
 Clone the repository:
-`https://github.com/Sagar10-9402/samvidDhi.git`
+```https://github.com/Sagar10-9402/samvidDhi.git```
 
 Install the dependencies:
 `pip install -r requirements.txt'
