@@ -2,7 +2,7 @@
 
 import unittest
 import json
-from api import app , jwt_token
+from api import app , jwt_token 
 
 class TestApp(unittest.TestCase):
     def setUp(self):
@@ -29,7 +29,7 @@ class TestApp(unittest.TestCase):
         headers = {
             "Authorization": f"Bearer {self.jwt_token}"
         }
-        response = self.app.get('/ta/2', headers=headers)
+        response = self.app.get('/ta/4', headers=headers)
         self.assertEqual(response.status_code, 200)
         
     def test_update_ta(self):

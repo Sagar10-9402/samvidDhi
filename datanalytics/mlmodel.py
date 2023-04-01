@@ -7,7 +7,7 @@ import joblib
 from sklearn.tree import DecisionTreeClassifier
 
 
-data = pd.read_csv('data.csv')
+data = pd.read_csv('datanalytics\data.csv')
 # print(data)
 
 X = data.iloc[:, :-1]  # Select all columns except the last one
@@ -35,7 +35,7 @@ y = encoder.fit_transform(y)
 # print('Predicted score:', encoder.inverse_transform(predicted_score))
 
 
-clf = joblib.load('TA_score_classifier.joblib') 
+clf = joblib.load('datanalytics\TA_score_classifier.joblib') 
 
 new_TA_features = [2,23,3,2,38]  # Example feature values for a new TA
 new_TA_features = [new_TA_features]  # Reshape into a 2D array
