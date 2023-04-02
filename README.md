@@ -1,21 +1,24 @@
 
+#  TA API
+
 ## Installation
 
 
 Clone the repository:
 ```bash
-  https://github.com/Sagar10-9402/samvidDhi.git  
+  git clone https://github.com/Sagar10-9402/samvidDhi.git  
 ```
   
 Install the dependencies:
 
 ```
   pip install -r requirements.txt
+
 ```
 
 ### Set up the MySQL database:
 
-Create a new MySQL database (e.g., ta_db).
+Create a new MySQL database (ta_db).
 Create a new table in the database called TA with the following columns:
 
 ```SQL 
@@ -50,15 +53,59 @@ Start the Flask server:
 
 
 ### Use a tool like curl or Postman to send requests to the API endpoints:
+#### we have a multiple endpoints to working api requirements : 
 
-POST /ta:
- create a new TA record
+POST / signup : we need the api access so for this access you have to signup first 
+```
+{
+    "username" : "user",
+    "password" : "password"
+}
+```
+
+POST /  login : login in the app and get generated the token
+Use the json body for the login 
+```
+{
+    "username" : "user",
+    "password" : "password"
+}
+```
+
+POST /ta: create a new TA record
+```
+{        
+    "native_english_speaker": false,
+    "course_instructor": "Rohan",
+    "course": "Introduction to Java",
+    "semester": 1,
+    "class_size": 45,
+    "class_attribute": 2
+}
+
+```
 
 GET /ta/:id: retrieve a TA record by ID
 
 PUT /ta/:id: update a TA record by ID
 
 DELETE /ta/:id: delete a TA record by ID
+
+
+
+
+#### ** Unittest of the API Development  i attached in the files **
+
+name of the file :
+#### Test Endpoints and Test logins 
+
+``` 
+  test_routes.py 
+  test_logins.py 
+```  
+
+
+
 
 
 

@@ -1,4 +1,3 @@
-# from secrets_key import secret_key
 from flask import Flask, jsonify, request
 import mysql.connector
 import jwt
@@ -10,7 +9,6 @@ app = Flask(__name__)
 
 
 app.config['JWT_SECRET_KEY'] = 'my-secret-key'
-
 jwt = JWTManager(app)
 
 
