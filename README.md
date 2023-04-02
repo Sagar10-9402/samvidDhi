@@ -11,7 +11,6 @@ Install the dependencies:
 
 ```
   pip install -r requirements.txt
-
 ```
 
 ### Set up the MySQL database:
@@ -47,7 +46,6 @@ Start the Flask server:
 
 ``` 
   python api.py
-
 ```
 
 
