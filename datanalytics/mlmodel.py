@@ -37,8 +37,8 @@ y = encoder.fit_transform(y)
 
 clf = joblib.load('datanalytics\TA_score_classifier.joblib') 
 
-new_TA_features = [2,23,3,2,38]  # Example feature values for a new TA
-new_TA_features = [new_TA_features]  # Reshape into a 2D array
+new_TA_features = [2,23,3,2,38]  
+new_TA_features = [new_TA_features]  
 predicted_score = clf.predict(new_TA_features)
 predicted_label = encoder.inverse_transform(predicted_score)
 print('Predicted score:', predicted_label)

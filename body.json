@@ -1,10 +1,11 @@
 
+
 {
-    "class_attribute": 1,
+    "native_english_speaker": true,
+    "course_instructor": "John Doe",
+    "course": "Introduction to Computer Science",
+    "semester": 2,
     "class_size": 50,
-    "course": "Java Programming",
-    "course_instructor": "Sid Rock",
-    "id": 3,
-    "native_english_speaker": false,
-    "semester": true
-}
+    "class_attribute": 3,
+    "id":1
+  }
