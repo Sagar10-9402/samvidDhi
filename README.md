@@ -48,7 +48,7 @@ MYSQL_DATABASE: the MySQL database name
 Start the Flask server:
 
 ``` 
-  python api.py
+  python ta_api.py
 ```
 
 
